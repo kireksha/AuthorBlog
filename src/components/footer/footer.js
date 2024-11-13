@@ -14,7 +14,7 @@ const FooterContainer = ({ className }) => {
 
 	useEffect(() => {
 		fetch(
-			'https://api.openweathermap.org/data/2.5/weather?q=Saransk&lang=ru&units=metric&appid=56181474be35e47aa875a4a99d0eb9c6',
+			'https://api.openweathermap.org/data/2.5/weather?q=Saransk&lang=ru&units=metric&appid=0e0e24e93d011ec6b7898510fba82756',
 		)
 			.then((res) => res.json())
 			.then(({ name, main, weather }) => {
