@@ -7,7 +7,7 @@ import { server } from '../../bff';
 import { Link, Navigate } from 'react-router-dom';
 import { AuthFormError, Button, H2, Input } from '../../components';
 import { setUser } from '../../actions';
-import { selectUserRole } from '../../components/selectors';
+import { selectUserRole } from '../../selectors';
 import { ROLE } from '../../constants';
 import styled from 'styled-components';
 
