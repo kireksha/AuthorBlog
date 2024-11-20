@@ -1,7 +1,25 @@
 import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
+import { removeCommentAsync, openModal, CLOSE_MODAL } from '../../../../../actions';
 import { Icon } from '../../../../../components';
+import { useServerRequest } from '../../../../../hooks';
 
-const CommentContainer = ({ className, id, author, publishedAt, content }) => {
+const CommentContainer = ({ className, id, author, publishedAt, content, postId }) => {
+	const dispatch = useDispatch();
+	const requestServer = useServerRequest();
+
+	const onCommentRemove = (id) => {
+		dispatch(
+			openModal({
+				text: 'Удалить комментарий?',
+				onConfirm: () => {
+					dispatch(removeCommentAsync(requestServer, postId, id));
+					dispatch(CLOSE_MODAL);
+				},
+				onCancel: () => dispatch(CLOSE_MODAL),
+			}),
+		);
+	};
 	return (
 		<div className={className}>
 			<div className="comment">
@@ -17,21 +35,21 @@ const CommentContainer = ({ className, id, author, publishedAt, content }) => {
 				</div>
 				<div className="comment-text">{content}</div>
 			</div>
-			<Icon id="fa-trash-o" margin="0 0 0 10px" onClick={() => {}} />
+			<Icon id="fa-trash-o" margin="0 0 0 10px" onClick={() => onCommentRemove(id)} />
 		</div>
 	);
 };
 
 export const Comment = styled(CommentContainer)`
-    display: flex;
-    margin: 10px 0 0;
-    width: 100%;
+	display: flex;
+	margin: 10px 0 0;
+	width: 100%;
 
-    & .comment {
-    padding: 5px 10px;
-    width: 550px;
-        border: 1px solid #000;
-    }
+	& .comment {
+		padding: 5px 10px;
+		width: 550px;
+		border: 1px solid #000;
+	}
 
 	& .information-panel {
 		display: flex;
