@@ -91,5 +91,47 @@
       "published_at": "2043-04-05"
     }
   ],
-  "comments": []
+  "comments": [
+    {
+      "id": "1bcb",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2034-08-09 08:03",
+      "content": "First "
+    },
+    {
+      "id": "6758",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2044-09-23 09:16",
+      "content": "First comment was above. It's the second!\n"
+    },
+    {
+      "id": "7b0a",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2056-03-02 21:30",
+      "content": "jhgjhghjjh"
+    },
+    {
+      "id": "41d7",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2046-02-06 13:42",
+      "content": "jhgjhghjjhfjklsdjf;l jfsdla kfjlkds jfjdls jfljsd lskjljf akslj lkjdlfj lfj lskdjfljs lkdjfksd kfjs dlkfjl;gjhskdjhgiu wfhdjm falm hdsjlfhajk \n"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "979b",
+      "hash": "0.62829432010529773222629046358633786439895629882813",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      }
+    }
+  ]
 }
