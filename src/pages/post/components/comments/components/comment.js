@@ -25,11 +25,11 @@ const CommentContainer = ({ className, id, author, publishedAt, content, postId 
 			<div className="comment">
 				<div className="information-panel">
 					<div className="author">
-						<Icon id="fa-user-circle-o" size="18px" onClick={() => {}} />
+						<Icon id="fa-user-circle-o" size="18px" cursor='default' />
 						{author}
 					</div>
 					<div className="published-at">
-						<Icon id="fa-calendar-o" size="18px" onClick={() => {}} />
+						<Icon id="fa-calendar-o" size="18px" cursor='default' />
 						{publishedAt}
 					</div>
 				</div>
