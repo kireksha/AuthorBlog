@@ -10,7 +10,7 @@ export const addPostComment = async (hash, userId, postId, content) => {
 		return {
 			error: 'Доступ запрещен',
 			res: null,
-		};
+		}; 
 	}
 
 	await addComment(userId, postId, content);

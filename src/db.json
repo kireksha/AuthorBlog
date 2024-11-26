@@ -89,6 +89,13 @@
       "published_at": "2040-05-18 07:48",
       "title": "husidhfiuhiuuijdhkafs",
       "content": "sfdjalfhjsdhfdshfkjdsfhsdhfkdshfksdj"
+    },
+    {
+      "id": "1a24",
+      "image_url": "https://media.istockphoto.com/id/506910700/photo/i-can-do-it.jpg?s=612x612&w=0&k=20&c=4r5UQKSwjtVyLai0R0B38RJXX2SFr0TpK4JFSWnVCfQ=",
+      "published_at": "2035-09-03 18:02",
+      "title": "100 Motivational Quotes That Will Inspire Your Success:",
+      "content": "Hello! Check the new link"
     }
   ],
   "comments": [],
@@ -118,6 +125,17 @@
     {
       "id": "cf94",
       "hash": "0.80420682120310371665539150853874161839485168457031",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      }
+    },
+    {
+      "id": "beae",
+      "hash": "0.28490301714402455068864128406858071684837341308594",
       "user": {
         "id": "001",
         "login": "anton",
