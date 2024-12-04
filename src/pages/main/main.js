@@ -1,7 +1,7 @@
 import { useMemo, useEffect, useState } from 'react';
 import { PostCard, Pagination, Search } from './components';
 import { useServerRequest } from '../../hooks';
-import { PAGINATION_LMIT } from '../../constants';
+import { PAGINATION_LIMIT } from '../../constants';
 import styled from 'styled-components';
 import { debounce, getLastPageFromLinks } from './utils';
 
@@ -13,7 +13,7 @@ const MainContainer = ({ className }) => {
 	const [lastPage, setLastPage] = useState(1);
 	const requestServer = useServerRequest();
 	useEffect(() => {
-		requestServer('fetchPosts', searchPhrase, page, PAGINATION_LMIT).then(
+		requestServer('fetchPosts', searchPhrase, page, PAGINATION_LIMIT).then(
 			({ res: { posts, links } }) => {
 				setPosts(posts);
 				setLastPage(getLastPageFromLinks(links));

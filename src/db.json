@@ -161,6 +161,17 @@
         "roleId": 0
       },
       "id": "jembaCK"
+    },
+    {
+      "hash": "0.64512003152348462720055977115407586097717285156250",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "2dbx7hu"
     }
   ]
 }

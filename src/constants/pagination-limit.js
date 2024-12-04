@@ -1,1 +1,1 @@
-export const PAGINATION_LMIT = 9;
+export const PAGINATION_LIMIT = 9;

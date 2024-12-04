@@ -9,6 +9,8 @@ const PostContentContainer = ({
 }) => {
 	const navigate = useNavigate();
 
+	
+
 	return (
 		<div className={className}>
 			<img src={imageUrl} alt={title} />

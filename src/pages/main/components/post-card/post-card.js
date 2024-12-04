@@ -22,6 +22,7 @@ const PostCardContainer = ({
 								<Icon cursor="default" id="fa-comment-o" margin="0 7px 0 0" size="18px" />
 								{commentsCount}
 							</div>
+							{publishedAt}
 						</div>
 					</div>
 				</div>

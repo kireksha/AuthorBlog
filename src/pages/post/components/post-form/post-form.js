@@ -52,7 +52,7 @@ const PostFormContainer = ({
 			<SpecialPanel
 				publishedAt={publishedAt}
 				margin="20px 0"
-				editButton={<Icon size="24px" id="fa-floppy-o" onClick={onSave} />}
+				editButton={<Icon size="24px" id="fa-floppy-o" margin="0 10px 0 0" onClick={onSave} />}
 			/>
 			<div
 				ref={contentRef}
