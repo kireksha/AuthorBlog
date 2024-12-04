@@ -6,23 +6,37 @@
       "password": "qwerty123",
       "registered_at": "2050-09-22",
       "role_id": 0
+    },
+    {
+      "login": "patamu",
+      "password": "qwe123",
+      "registered_at": "2043-04-04 10:56",
+      "role_id": "1",
+      "id": "W8db-iL"
+    },
+    {
+      "login": "ustal",
+      "password": "qwe123",
+      "registered_at": "2061-06-16 21:04",
+      "role_id": "1",
+      "id": "ZUC2rZ4"
     }
   ],
   "roles": [
     {
-      "id": "0",
+      "id": 0,
       "name": "Администратор"
     },
     {
-      "id": "1",
+      "id": 1,
       "name": "Модератор"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Читатель"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Гость"
     }
   ],
@@ -85,13 +99,6 @@
     },
     {
       "image_url": "",
-      "published_at": "2056-04-19 11:57",
-      "title": "fdkaljfldsajfjdjdf",
-      "content": "lorem jfdlsfkdsa jfjdl jlfas jl",
-      "id": "iZ8upQo"
-    },
-    {
-      "image_url": "",
       "published_at": "2043-08-09 04:50",
       "title": "sadfjklasdjlfads;f",
       "content": "fjsdjflkdsjafjdsljfdsljfldsjlfkdsa",
@@ -105,7 +112,29 @@
       "id": "mggaalq"
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "author_id": "001",
+      "post_id": "002",
+      "published_at": "2043-12-17 00:04",
+      "content": "First comment here\n",
+      "id": 1
+    },
+    {
+      "author_id": "001",
+      "post_id": "002",
+      "published_at": "2047-12-24 00:38",
+      "content": "And the second comment comes right now ",
+      "id": 2
+    },
+    {
+      "author_id": "001",
+      "post_id": "002",
+      "published_at": "2052-01-21 22:31",
+      "content": "I haven't even read the article cause it's meaningless\n ",
+      "id": 3
+    }
+  ],
   "sessions": [
     {
       "id": "979b",
@@ -172,6 +201,17 @@
         "roleId": 0
       },
       "id": "2dbx7hu"
+    },
+    {
+      "hash": "0.01186593160172577654520864598453044891357421875000",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "VzRD60h"
     }
   ]
 }

@@ -35,7 +35,7 @@ export const Blog = () => {
 
 		dispatch(setUser({
 			...currentUserData,
-			roleId: Number(currentUserData.roleId),
+			roleId: currentUserData.roleId,
 		}));
 	}, [dispatch]);
 

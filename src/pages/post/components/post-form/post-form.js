@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { useServerRequest } from '../../../../hooks';
+import { PROP_TYPE } from '../../../../constants';
 
 const PostFormContainer = ({
 	className,
@@ -52,7 +53,9 @@ const PostFormContainer = ({
 			<SpecialPanel
 				publishedAt={publishedAt}
 				margin="20px 0"
-				editButton={<Icon size="24px" id="fa-floppy-o" margin="0 10px 0 0" onClick={onSave} />}
+				editButton={
+					<Icon size="24px" id="fa-floppy-o" margin="0 10px 0 0" onClick={onSave} />
+				}
 			/>
 			<div
 				ref={contentRef}
@@ -79,3 +82,7 @@ export const PostForm = styled(PostFormContainer)`
 		white-space: pre-line;
 	}
 `;
+
+PostForm.propTypes = {
+	post: PROP_TYPE.POST.isRequired,
+};

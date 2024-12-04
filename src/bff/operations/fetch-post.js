@@ -5,7 +5,7 @@ export const fetchPost = async (postId) => {
 	let post;
 	let error;
 	try {
-		const post = await getPost(postId);
+		post = await getPost(postId);
 	} catch (postError) {
 		error = postError;
 	}

@@ -5,9 +5,9 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 import { useServerRequest } from '../../hooks';
 import { loadPostAsync, RESET_POST_DATA } from '../../actions';
 import { selectPost } from '../../selectors';
-import styled from 'styled-components';
 import { Error, PrivateContent } from '../../components';
 import { ROLE } from '../../constants';
+import styled from 'styled-components';
 
 const PostContainer = ({ className }) => {
 	const [error, setError] = useState(null);
@@ -39,7 +39,7 @@ const PostContainer = ({ className }) => {
 	}
 
 	const SpecificPostPage =
-		isCreating || isEditing ? (
+		(isCreating || isEditing) ? (
 			<PrivateContent access={[ROLE.ADMIN]} serverError={error}>
 				<div className={className}>
 					<PostForm post={post} />
