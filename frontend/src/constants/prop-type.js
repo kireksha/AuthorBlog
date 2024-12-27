@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ROLE } from '../bff/constants';
+import { ROLE } from './role';
 
 const ROLE_ID = PropTypes.oneOf(Object.values(ROLE));
 

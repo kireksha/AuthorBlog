@@ -23,7 +23,7 @@ const PostCardContainer = ({
 								<Icon cursor="default" id="fa-comment-o" margin="0 7px 0 0" size="18px" />
 								{commentsCount}
 							</div>
-							{publishedAt}
+							{publishedAt.slice(0, 16).replaceAll('T', ' ')}
 						</div>
 					</div>
 				</div>
@@ -45,7 +45,7 @@ export const PostCard = styled(PostCardContainer)`
 
 	& .post-card-footer {
 		border-top: 1px solid #000;
-        padding: 5px;
+		padding: 5px;
 	}
 
 	& h4 {
@@ -54,8 +54,8 @@ export const PostCard = styled(PostCardContainer)`
 
 	& .post-card-info {
 		display: flex;
-        justify-content: space-between;
-        margin-top: 5px;
+		justify-content: space-between;
+		margin-top: 5px;
 	}
 
 	& .published-at {
@@ -64,6 +64,7 @@ export const PostCard = styled(PostCardContainer)`
 
 	& .comments-count {
 		display: flex;
+		margin-right: 10px;
 	}
 `;
 
@@ -73,4 +74,4 @@ PostCard.propTypes = {
 	imageUrl: PropTypes.string.isRequired,
 	publishedAt: PropTypes.string.isRequired,
 	commentsCount: PropTypes.number.isRequired,
-}
+};

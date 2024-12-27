@@ -1,13 +1,9 @@
 export function request(url, method, data) {
-	return fetch(
-		`http://localhost:3001${url}`,
-		{
-			headers: {
-				'content-type': 'application/json',
-			},
-			method: method || 'GET',
-			body: data ? JSON.stringify(data) : undefined,
+	return fetch('/api' + url, {
+		headers: {
+			'content-type': 'application/json',
 		},
-		{ withCredentials: true },
-	).then((res) => res.json());
+		method: method || 'GET',
+		body: data ? JSON.stringify(data) : undefined,
+	}).then((res) => res.json());
 }

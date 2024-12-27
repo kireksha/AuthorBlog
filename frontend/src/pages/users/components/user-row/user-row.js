@@ -43,7 +43,9 @@ const UserRowContainer = ({
 		<>
 			<TableRow className={className} border={true}>
 				<td className="login-column">{login}</td>
-				<td className="registeredAt-column">{registeredAt}</td>
+				<td className="registeredAt-column">
+					{registeredAt.slice(0, 16).replaceAll('T', ' ')}
+				</td>
 				<td className="role-column">
 					<select value={selectedRoleId} onChange={onRoleChange}>
 						{roles.map(({ id: roleId, name: roleName }) => (
