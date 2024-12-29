@@ -20,8 +20,12 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve("..", "frontend", "build", "index.html"));
 });
 
-mongoose.connect(process.env.DB_CONNECTION_STRING).then(() => {
-  app.listen(port, () => {
-    console.log(`Server started on port ${port}`);
+mongoose
+  .connect(
+    "mongodb+srv://kirill:kirill123@cluster0.hvbaq.mongodb.net/authorblog?retryWrites=true&w=majority&appName=Cluster0"
+  )
+  .then(() => {
+    app.listen(port, () => {
+      console.log(`Server started on port ${port}`);
+    });
   });
-});
